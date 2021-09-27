@@ -10,7 +10,7 @@
             <td>{{ $cliente->nome }}</td>
             <td>{{ $cliente->pais }}</td>
             <td>{{ $cliente->email }}</td>
-            <td>Editar</td>
+            <td><a href="{{ route('app.clientes.editar', $cliente->id) }}">Editar</a></td>
             <td><a href="{{ route('app.clientes.remover', $cliente->id) }}">Apagar</a></td>
         </tr>
     @endforeach
